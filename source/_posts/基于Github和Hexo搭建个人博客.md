@@ -114,7 +114,7 @@ INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 
 在浏览器中访问[http://localhost:4000/](http://localhost:4000/)即可看到博客
 
-![image](../images/example.png)
+
 
 需要注意的是，此时浏览的博客是本地的。这是因为hexo server启动了一个本地开发服务器（通常在 `localhost:4000`），用于在你的计算机上预览博客。这个服务器仅在你的计算机上运行，不对外公开。本地服务器使你能够快速查看更改后的效果，而不需要每次修改后都将网站部署到远程服务器。
 
