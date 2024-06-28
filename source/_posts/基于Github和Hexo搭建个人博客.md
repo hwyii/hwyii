@@ -22,7 +22,7 @@ Node.js 是一个开源的、跨平台的 JavaScript 运行时环境，允许开
 
 ### Hexo
 
-Hexo 是一个快速、简洁且功能强大的静态博客框架，它基于 Node.js 构建，主要用于创建和管理静态博客网站。Hexo 使用 Markdown 语言撰写文章，通过命令生成静态文件，并支持一键部署到各种托管平台（如 GitHub Pages）。
+Hexo 是一个快速、简洁且功能强大的静态博客框架，它基于 Node.js 构建，主要用于创建和管理静态博客网站。Hexo 使用 **Markdown**语言撰写文章（默认本文读者会使用Markdown），通过命令生成静态文件，并支持一键部署到各种托管平台（如 GitHub Pages）。
 
 ## 环境准备
 
@@ -46,11 +46,7 @@ node -v
 
 #### 安装Hexo
 
-Hexo的官网：https://hexo.io/zh-cn/
-
-官方文档：https://hexo.io/zh-cn/docs/
-
-官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在**命令行界面**使用npm安装Hexo：
+Hexo的官网：[here](https://hexo.io/zh-cn/)，官方文档：[here](https://hexo.io/zh-cn/docs/)，官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在**命令行界面**使用npm安装Hexo：
 
 ```bash
 npm install -g hexo-cli
@@ -89,7 +85,7 @@ _config.yml
 
 #### `_config.yml`
 
-Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录结构、写作设置、生成设置、部署设置等。你可以通过修改此文件来配置 Hexo 网站的各种参数。关于它的详细配置信息在https://hexo.io/zh-cn/docs/configuration。
+Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录结构、写作设置、生成设置、部署设置等。你可以通过修改此文件来配置 Hexo 网站的各种参数。关于它的详细配置信息在[这里](https://hexo.io/zh-cn/docs/configuration)。
 
 #### `source`
 
@@ -97,7 +93,7 @@ Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录�
 
 #### `scaffolds`
 
-该目录包含了 Hexo 创建新内容时的模板文件。默认情况下，它包括 `post.md`、`page.md` 和 `draft.md`，可以根据需要进行定制。它的详细信息在https://hexo.io/zh-cn/docs/writing。
+该目录包含了 Hexo 创建新内容时的模板文件。默认情况下，它包括 `post.md`、`page.md` 和 `draft.md`，可以根据需要进行定制。它的详细信息在[这里](https://hexo.io/zh-cn/docs/writing)。
 
 ### 浏览本地博客
 
@@ -116,9 +112,9 @@ INFO  Start processing
 INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 ```
 
-在浏览器中访问http://localhost:4000/即可看到博客
+在浏览器中访问[http://localhost:4000/](http://localhost:4000/)即可看到博客
 
-![image-20240628211724308](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240628211724308.png)
+![image](../images/example.png)
 
 需要注意的是，此时浏览的博客是本地的。这是因为hexo server启动了一个本地开发服务器（通常在 `localhost:4000`），用于在你的计算机上预览博客。这个服务器仅在你的计算机上运行，不对外公开。本地服务器使你能够快速查看更改后的效果，而不需要每次修改后都将网站部署到远程服务器。
 
@@ -202,26 +198,6 @@ git add .
 git commit -m "Initial commit"
 git push -u origin master
 ```
-
-**git init**：
-
-- 这个命令初始化一个新的 Git 仓库。通常在你开始一个新的项目时，需要在项目根目录运行 `git init` 来创建一个本地的 Git 仓库。
-
-**git remote add origin https://github.com/hwyii/hwyii.git**：
-
-- 这个命令将你的本地 Git 仓库关联到远程的 GitHub 仓库。`origin` 是一个远程仓库的别名，你可以将其理解为指向远程仓库的一个引用。
-
-**git add .**：
-
-- 这个命令将所有修改过的文件添加到 Git 的暂存区（Staging Area），准备提交到本地仓库。
-
-**git commit -m "Initial commit"**：
-
-- 这个命令提交你暂存区中的所有文件到本地 Git 仓库，并附带一条提交信息 `-m "Initial commit"`。提交信息通常描述了这次提交的变更内容。
-
-**git push -u origin master**：
-
-- 这个命令将本地的 `master`推送到远程的 `origin` 仓库。
 
 ##### 非首次推送：
 
