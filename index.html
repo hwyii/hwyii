@@ -112,7 +112,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 
 <p>显示版本号说明安装成功。</p>
-<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>Hexo的官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%9Ahttps://hexo.io/zh-cn/docs/%EF%BC%8C%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E4%B8%AD%E4%B9%9F%E5%AF%B9Git%E5%92%8CNode.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%81%9A%E4%BA%86%E6%8C%87%E5%AF%BC%E3%80%82%E6%89%80%E6%9C%89%E5%BF%85%E5%A4%87%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%90%8E%EF%BC%8C%E5%8D%B3%E5%8F%AF%E5%9C%A8**%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2**%E4%BD%BF%E7%94%A8npm%E5%AE%89%E8%A3%85Hexo%EF%BC%9A">https://hexo.io/zh-cn/，以及官方文档：https://hexo.io/zh-cn/docs/，官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在**命令行界面**使用npm安装Hexo：</a></p>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>Hexo的官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
+<p>官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<p>官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在<strong>命令行界面</strong>使用npm安装Hexo：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
 <h2 id="使用Hexo搭建个人博客"><a href="#使用Hexo搭建个人博客" class="headerlink" title="使用Hexo搭建个人博客"></a>使用Hexo搭建个人博客</h2><p>自选合适的目录新建文件夹，下面给出一个例子，在命令行界面使用。注意这里是绝对路径，且是空目录：</p>
@@ -124,9 +126,9 @@
 <p>新建完成后将会生成如下目录文件：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">node_modules</span><br><span class="line">package-lock.json</span><br><span class="line">package.json</span><br><span class="line">scaffolds</span><br><span class="line"><span class="built_in">source</span></span><br><span class="line">themes</span><br><span class="line">_config.yml</span><br></pre></td></tr></table></figure>
 
-<h3 id="目录文件简单说明"><a href="#目录文件简单说明" class="headerlink" title="目录文件简单说明"></a>目录文件简单说明</h3><h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><p>Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录结构、写作设置、生成设置、部署设置等。你可以通过修改此文件来配置 Hexo 网站的各种参数。关于它的详细配置信息在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration%E3%80%82">https://hexo.io/zh-cn/docs/configuration。</a></p>
-<h4 id="source"><a href="#source" class="headerlink" title="source"></a>source</h4><p><code>source</code> 目录是 Hexo 用来存放博客内容的地方。这个目录包含了你所有的 Markdown 文件和资源文件。默认情况下，有 <code>_posts</code> 子目录用于存放博客文章。</p>
-<h4 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h4><p>该目录包含了 Hexo 创建新内容时的模板文件。默认情况下，它包括 <code>post.md</code>、<code>page.md</code> 和 <code>draft.md</code>，可以根据需要进行定制。它的详细信息在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing%E3%80%82">https://hexo.io/zh-cn/docs/writing。</a></p>
+<h3 id="目录文件简单说明"><a href="#目录文件简单说明" class="headerlink" title="目录文件简单说明"></a>目录文件简单说明</h3><h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a><code>_config.yml</code></h4><p>Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录结构、写作设置、生成设置、部署设置等。你可以通过修改此文件来配置 Hexo 网站的各种参数。关于它的详细配置信息在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration%E3%80%82">https://hexo.io/zh-cn/docs/configuration。</a></p>
+<h4 id="source"><a href="#source" class="headerlink" title="source"></a><code>source</code></h4><p><code>source</code> 目录是 Hexo 用来存放博客内容的地方。这个目录包含了你所有的 Markdown 文件和资源文件。默认情况下，有 <code>_posts</code> 子目录用于存放博客文章。</p>
+<h4 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a><code>scaffolds</code></h4><p>该目录包含了 Hexo 创建新内容时的模板文件。默认情况下，它包括 <code>post.md</code>、<code>page.md</code> 和 <code>draft.md</code>，可以根据需要进行定制。它的详细信息在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing%E3%80%82">https://hexo.io/zh-cn/docs/writing。</a></p>
 <h3 id="浏览本地博客"><a href="#浏览本地博客" class="headerlink" title="浏览本地博客"></a>浏览本地博客</h3><p>经过如上的准备，我们已经可以初步浏览博客了。首先进入hexo的项目目录，然后使用如下命令开启博客服务：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /d D:\Study\Blog</span><br><span class="line">D:\Study\Blog&gt;hexo s</span><br></pre></td></tr></table></figure>
 
@@ -143,11 +145,11 @@
 <p>举一个例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D:\Study\Blog&gt;hexo new post 基于Github和Hexo搭建个人博客</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: D:\Study\Blog\<span class="built_in">source</span>\_posts\基于Github和Hexo搭建个人博客.md</span><br></pre></td></tr></table></figure>
 
-<h4 id="部署到远程服务器Github"><a href="#部署到远程服务器Github" class="headerlink" title="部署到远程服务器Github"></a>部署到远程服务器Github</h4><p>如何将本地博客部署到远程服务器？Hexo 提供了快速方便的一键部署功能。但是首先我们需要修改本地配置文件_config.yml中的一些信息：</p>
-<h5 id="1-修改url"><a href="#1-修改url" class="headerlink" title="1. 修改url"></a>1. 修改url</h5><p>将url设置为’<a target="_blank" rel="noopener" href="https://username.github.io/project'%EF%BC%8Cusername%E6%98%AF">https://username.github.io/project&#39;，username是</a> GitHub 用户名，是您的 GitHub 账号的唯一标识符。project是 GitHub 仓库（repository）的名称，是你在 GitHub 上创建的一个项目或仓库的名称。每个仓库都有一个唯一的名称，用于区分不同的项目。下面是我们的例子：</p>
+<h4 id="部署到远程服务器Github"><a href="#部署到远程服务器Github" class="headerlink" title="部署到远程服务器Github"></a>部署到远程服务器Github</h4><p>如何将本地博客部署到远程服务器？Hexo 提供了快速方便的一键部署功能。但是首先我们需要修改本地配置文件<code>_config.yml</code>中的一些信息：</p>
+<h5 id="修改url"><a href="#修改url" class="headerlink" title="修改url"></a>修改url</h5><p>将url设置为<code>https://username.github.io/project</code>，<code>username</code>是 GitHub 用户名，是您的 GitHub 账号的唯一标识符。project是 GitHub 仓库（repository）的名称，是你在 GitHub 上创建的一个项目或仓库的名称。每个仓库都有一个唯一的名称，用于区分不同的项目。下面是我们的例子：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://hwyii.github.io/hwyii</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="2-修改deploy"><a href="#2-修改deploy" class="headerlink" title="2. 修改deploy"></a>2. 修改deploy</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/hwyii/hwyii.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
+<h5 id="修改deploy"><a href="#修改deploy" class="headerlink" title="修改deploy"></a>修改deploy</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/hwyii/hwyii.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
 
 <p>这段配置表明您希望使用 Git 将生成的静态网页部署到 GitHub Pages 上，使其可以通过 <code>https://username.github.io/project</code> 这样的 URL 访问到。</p>
 <ul>
@@ -177,7 +179,29 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin https://github.com/hwyii/hwyii.git</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;Initial commit&quot;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<h5 id="第一次推送到远程服务器："><a href="#第一次推送到远程服务器：" class="headerlink" title="第一次推送到远程服务器："></a>第一次推送到远程服务器：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin https://github.com/hwyii/hwyii.git</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Initial commit&quot;</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p><strong>git init</strong>：</p>
+<ul>
+<li>这个命令初始化一个新的 Git 仓库。通常在你开始一个新的项目时，需要在项目根目录运行 <code>git init</code> 来创建一个本地的 Git 仓库。</li>
+</ul>
+<p><strong>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/hwyii/hwyii.git">https://github.com/hwyii/hwyii.git</a></strong>：</p>
+<ul>
+<li>这个命令将你的本地 Git 仓库关联到远程的 GitHub 仓库。<code>origin</code> 是一个远程仓库的别名，你可以将其理解为指向远程仓库的一个引用。</li>
+</ul>
+<p>**git add .**：</p>
+<ul>
+<li>这个命令将所有修改过的文件添加到 Git 的暂存区（Staging Area），准备提交到本地仓库。</li>
+</ul>
+<p>**git commit -m “Initial commit”**：</p>
+<ul>
+<li>这个命令提交你暂存区中的所有文件到本地 Git 仓库，并附带一条提交信息 <code>-m &quot;Initial commit&quot;</code>。提交信息通常描述了这次提交的变更内容。</li>
+</ul>
+<p><strong>git push -u origin master</strong>：</p>
+<ul>
+<li>这个命令将本地的 <code>master</code>推送到远程的 <code>origin</code> 仓库。</li>
+</ul>
+<h5 id="非首次推送："><a href="#非首次推送：" class="headerlink" title="非首次推送："></a>非首次推送：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Update files&quot;</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 
 
 
