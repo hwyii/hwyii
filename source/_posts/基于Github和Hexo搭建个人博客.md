@@ -83,15 +83,15 @@ _config.yml
 
 ### 目录文件简单说明
 
-#### _config.yml
+#### `_config.yml`
 
 Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录结构、写作设置、生成设置、部署设置等。你可以通过修改此文件来配置 Hexo 网站的各种参数。关于它的详细配置信息在https://hexo.io/zh-cn/docs/configuration。
 
-#### source
+#### `source`
 
 `source` 目录是 Hexo 用来存放博客内容的地方。这个目录包含了你所有的 Markdown 文件和资源文件。默认情况下，有 `_posts` 子目录用于存放博客文章。
 
-#### scaffolds
+#### `scaffolds`
 
 该目录包含了 Hexo 创建新内容时的模板文件。默认情况下，它包括 `post.md`、`page.md` 和 `draft.md`，可以根据需要进行定制。它的详细信息在https://hexo.io/zh-cn/docs/writing。
 
@@ -138,17 +138,17 @@ INFO  Created: D:\Study\Blog\source\_posts\基于Github和Hexo搭建个人博客
 
 #### 部署到远程服务器Github
 
-如何将本地博客部署到远程服务器？Hexo 提供了快速方便的一键部署功能。但是首先我们需要修改本地配置文件_config.yml中的一些信息：
+如何将本地博客部署到远程服务器？Hexo 提供了快速方便的一键部署功能。但是首先我们需要修改本地配置文件`_config.yml`中的一些信息：
 
-##### 1. 修改url
+##### 修改url
 
-将url设置为'https://username.github.io/project'，username是 GitHub 用户名，是您的 GitHub 账号的唯一标识符。project是 GitHub 仓库（repository）的名称，是你在 GitHub 上创建的一个项目或仓库的名称。每个仓库都有一个唯一的名称，用于区分不同的项目。下面是我们的例子：
+将url设置为`https://username.github.io/project`，`username`是 GitHub 用户名，是您的 GitHub 账号的唯一标识符。project是 GitHub 仓库（repository）的名称，是你在 GitHub 上创建的一个项目或仓库的名称。每个仓库都有一个唯一的名称，用于区分不同的项目。下面是我们的例子：
 
 ```yaml
 url: https://hwyii.github.io/hwyii
 ```
 
-##### 2. 修改deploy
+##### 修改deploy
 
 ```yaml
 deploy:
@@ -189,13 +189,37 @@ hexo generate
 hexo deploy
 ```
 
-```
+##### 第一次推送到远程服务器：
+
+```bash
 git init
 git remote add origin https://github.com/hwyii/hwyii.git
 git add .
 git commit -m "Initial commit"
 git push -u origin master
 ```
+
+**git init**：
+
+- 这个命令初始化一个新的 Git 仓库。通常在你开始一个新的项目时，需要在项目根目录运行 `git init` 来创建一个本地的 Git 仓库。
+
+**git remote add origin https://github.com/hwyii/hwyii.git**：
+
+- 这个命令将你的本地 Git 仓库关联到远程的 GitHub 仓库。`origin` 是一个远程仓库的别名，你可以将其理解为指向远程仓库的一个引用。
+
+**git add .**：
+
+- 这个命令将所有修改过的文件添加到 Git 的暂存区（Staging Area），准备提交到本地仓库。
+
+**git commit -m "Initial commit"**：
+
+- 这个命令提交你暂存区中的所有文件到本地 Git 仓库，并附带一条提交信息 `-m "Initial commit"`。提交信息通常描述了这次提交的变更内容。
+
+**git push -u origin master**：
+
+- 这个命令将本地的 `master`推送到远程的 `origin` 仓库。
+
+##### 非首次推送：
 
 
 
