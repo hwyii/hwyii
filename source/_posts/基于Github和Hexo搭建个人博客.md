@@ -118,7 +118,7 @@ INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 
 需要注意的是，此时浏览的博客是本地的。这是因为hexo server启动了一个本地开发服务器（通常在 `localhost:4000`），用于在你的计算机上预览博客。这个服务器仅在你的计算机上运行，不对外公开。本地服务器使你能够快速查看更改后的效果，而不需要每次修改后都将网站部署到远程服务器。
 
-#### 使用Hexo写文章
+### 使用Hexo写文章
 
 在项目目录下使用命令
 
@@ -136,11 +136,11 @@ INFO  Validating config
 INFO  Created: D:\Study\Blog\source\_posts\基于Github和Hexo搭建个人博客.md
 ```
 
-#### 部署到远程服务器Github
+### 部署到远程服务器Github
 
 如何将本地博客部署到远程服务器？Hexo 提供了快速方便的一键部署功能。但是首先我们需要修改本地配置文件`_config.yml`中的一些信息：
 
-##### 修改url
+#### 修改url
 
 将url设置为`https://username.github.io/project`，`username`是 GitHub 用户名，是您的 GitHub 账号的唯一标识符。project是 GitHub 仓库（repository）的名称，是你在 GitHub 上创建的一个项目或仓库的名称。每个仓库都有一个唯一的名称，用于区分不同的项目。下面是我们的例子：
 
@@ -148,7 +148,7 @@ INFO  Created: D:\Study\Blog\source\_posts\基于Github和Hexo搭建个人博客
 url: https://hwyii.github.io/hwyii
 ```
 
-##### 修改deploy
+#### 修改deploy
 
 ```yaml
 deploy:
@@ -189,7 +189,7 @@ hexo generate
 hexo deploy
 ```
 
-##### 第一次推送到远程服务器：
+#### 第一次推送到远程服务器：
 
 ```bash
 git init
@@ -199,7 +199,7 @@ git commit -m "Initial commit"
 git push -u origin master
 ```
 
-##### 非首次推送：
+#### 非首次推送：
 
 ```bash
 hexo generate
@@ -209,7 +209,7 @@ git commit -m "Update files"
 git push origin master
 ```
 
-
+### 注意：
 
 
 
