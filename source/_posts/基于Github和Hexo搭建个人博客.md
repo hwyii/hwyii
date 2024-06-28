@@ -46,7 +46,11 @@ node -v
 
 #### 安装Hexo
 
-Hexo的官网：https://hexo.io/zh-cn/，以及官方文档：https://hexo.io/zh-cn/docs/，官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在**命令行界面**使用npm安装Hexo：
+Hexo的官网：https://hexo.io/zh-cn/
+
+官方文档：https://hexo.io/zh-cn/docs/
+
+官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在**命令行界面**使用npm安装Hexo：
 
 ```bash
 npm install -g hexo-cli
@@ -220,6 +224,14 @@ git push -u origin master
 - 这个命令将本地的 `master`推送到远程的 `origin` 仓库。
 
 ##### 非首次推送：
+
+```bash
+hexo generate
+hexo deploy
+git add .
+git commit -m "Update files"
+git push origin master
+```
 
 
 
