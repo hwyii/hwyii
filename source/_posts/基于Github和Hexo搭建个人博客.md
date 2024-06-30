@@ -209,11 +209,11 @@ git commit -m "Update files"
 git push origin master
 ```
 
-### 注意：
-
-
-
 以上是关于Hexo的一些最基本的操作，更多指令可以见上文中提到的Hexo官方文档，本文也将持续更新一些细节。
+
+## 注意：
+
+以下是一些踩过的坑：
 
 
 
