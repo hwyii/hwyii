@@ -4,7 +4,7 @@ date: 2024-06-28 20:02:50
 tags: 
 ---
 
-本文参考了[Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。
+本文参考了[Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )和[dongself](https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。
 
 ## 基本工具介绍
 
@@ -39,17 +39,17 @@ Hexo 是一个快速、简洁且功能强大的静态博客框架，它基于 No
 Hexo基于Node.js，所有还需要安装Node.js。根据自己电脑版本从此处下载即可[Node.js](https://nodejs.cn/download/). 通过以下指令检查是否安装成功：
 
 ```bash
-node -v
+$ node -v
 ```
 
-显示版本号说明安装成功。
+显示版本号说明安装成功。注意$表示命令行提示符，输入时删去。
 
 #### 安装Hexo
 
 Hexo的官网：[here](https://hexo.io/zh-cn/)，官方文档：[here](https://hexo.io/zh-cn/docs/)，官方文档中也对Git和Node.js的安装做了指导。所有必备的应用程序安装完成后，即可在**命令行界面**使用npm安装Hexo：
 
 ```bash
-npm install -g hexo-cli
+$ npm install -g hexo-cli
 ```
 
 ## 使用Hexo搭建个人博客
@@ -57,7 +57,7 @@ npm install -g hexo-cli
 自选合适的目录新建文件夹，下面给出一个例子，在命令行界面使用。注意这里是绝对路径，且是空目录：
 
 ```bash
-hexo init D:\Study\Blog
+$ hexo init D:\Study\Blog
 ```
 
 将会看到：
@@ -100,8 +100,8 @@ Hexo 的主配置文件，包含了网站的基本设置、URL 配置、目录�
 经过如上的准备，我们已经可以初步浏览博客了。首先进入hexo的项目目录，然后使用如下命令开启博客服务：
 
 ```bash
-cd /d D:\Study\Blog
-D:\Study\Blog>hexo s
+$ cd /d D:\Study\Blog
+$ D:\Study\Blog>hexo s
 ```
 
 将会显示如下结果：
@@ -123,7 +123,7 @@ INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 在项目目录下使用命令
 
 ```bash
-hexo new [layout] <title>
+$ hexo new [layout] <title>
 ```
 
 可以在命令中指定文章的布局（layout），默认为 post，可以通过修改 _config.yml 中的 default_layout 参数来指定默认布局。
@@ -131,7 +131,7 @@ hexo new [layout] <title>
 举一个例子：
 
 ```bash
-D:\Study\Blog>hexo new post 基于Github和Hexo搭建个人博客
+$ D:\Study\Blog>hexo new post 基于Github和Hexo搭建个人博客
 INFO  Validating config
 INFO  Created: D:\Study\Blog\source\_posts\基于Github和Hexo搭建个人博客.md
 ```
@@ -174,46 +174,244 @@ deploy:
 - 安装插件
 
 ```bash
-npm install hexo-deployer-git --save
+$ npm install hexo-deployer-git --save
 ```
 
 - 生成静态文件
 
 ```bash
-hexo generate
+$ hexo generate
 ```
 
 - 部署到GitHub Pages
 
 ```bash
-hexo deploy
+$ hexo deploy
 ```
 
-#### 第一次推送到远程服务器：
+#### 第一次推送到远程服务器
 
 ```bash
-git init
-git remote add origin https://github.com/hwyii/hwyii.git
-git add .
-git commit -m "Initial commit"
-git push -u origin master
+$ git init
+$ git remote add origin https://github.com/hwyii/hwyii.git
+$ git add .
+$ git commit -m "Initial commit"
+$ git push -u origin master
 ```
 
-#### 非首次推送：
+#### 非首次推送
 
 ```bash
-hexo generate
-hexo deploy
-git add .
-git commit -m "Update files"
-git push origin master
+$ hexo generate
+$ hexo deploy
+$ git add .
+$ git commit -m "Update files"
+$ git push origin master
 ```
 
 以上是关于Hexo的一些最基本的操作，更多指令可以见上文中提到的Hexo官方文档，本文也将持续更新一些细节。
 
-## 注意：
 
-以下是一些踩过的坑：
+
+## 更改主题
+
+默认的landscape不太美观，您可以在Hexo的各类主题里选择自己喜欢的[theme](https://hexo.io/themes/)，这里以[next](https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md)为例对常见使用方式进行介绍。next是比较常使用的一种主题，界面简约，且在使用过程中遇到的问题基本可以在网上搜到解决方式。
+
+### 安装NexT
+
+- 下载主题
+
+进入Hexo的目录，使用git克隆NexT到本地
+
+```bash
+$ git clone https://github.com/theme-next/hexo-theme-next themes/next
+```
+
+此时你的Hexo项目目录结构应该类似于：
+
+```bash
+hexo/
+├── _config.yml
+├── node_modules/
+├── package.json
+├── public/
+├── scaffolds/
+├── source/
+└── themes/
+    └── next/   # 这里是克隆下来的 Next 主题
+```
+
+- 修改配置
+
+将站点根目录下`_config.yml`文件中的`theme: next`。注意与主题next中的配置文件`_config.yml`区分。
+
+由于Hexo在5.0之后把swig删了，需要手动安装：
+
+```bash
+$ npm i hexo-renderer -swig
+```
+
+否则页面无法显示。
+
+### 主题设定
+
+1. Scheme
+
+修改theme目录下 `_config.yml` 文件中的 `scheme: Mist`
+Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。
+
+- Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白
+- Mist - Muse 的紧凑版本，整洁有序的单栏外观
+- Pisces - 双栏 Scheme，小家碧玉似的清新
+- Gemini - 新出来的，个人感觉跟Pisces差不多，双栏。
+
+2. 头像
+
+修改theme目录下 `_config.yml` 文件中的 `avatar` 设置成头像的地址
+
+- 放置在 `source/images/` 目录下 配置为：`avatar: /images/avatar.png`
+
+3. 菜单
+
+```yaml
+menu:
+  home: /|| home
+  about: /about/|| user
+  archives: /archives/|| archive
+```
+
+- 需要删去模板中`/`和`||`之间的空格，否则无法渲染成功。
+- 对于对应的分页，需要新建页面，这里以`about`为例
+
+```bash
+$ hexo new page about
+```
+
+输入命令后，在`/source`下会生成一个新的文件夹`about`，在该文件夹下会有一个`index.md`文件，在里面写入关于自己的介绍即可。
+
+### 第三方服务
+
+第三方插件要在站点根目录下执行
+
+1. 站内搜索
+
+首先安装`hexo-generator-searchdb`插件
+
+```bash
+$ npm install hexo-generator-searchdb --save
+```
+
+在根目录`_config.yml`的任意位置新增以下内容
+
+```yaml
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+```
+
+最后在theme下的`_config.yml`启用站内搜索功能，即将`local_search`下的`enable:`值设为`true`.
+
+2. 字数和时长统计
+
+在theme下的`_config.yml`启用对应功能，即将`post_wordcount`下的值设为`true`.
+
+
+
+## FAQ：
+
+### 如何解决网络代理问题？
+
+因为种种原因（比如科学上网）出现报错
+
+```bash
+fatal: unable to access 'https://github.com/hwyii/hwyii.git/': Could not resolve proxy: 127.0.0.1.7890 FATAL Something's wrong.
+```
+
+主要进行了如下尝试，有关系统的部分以Win10为例。
+
+#### 检查代理设置
+
+查看 Git 配置中是否有设置代理 (`git config --global --get http.proxy` 和 `git config --global --get https.proxy`)。如果配置了代理但不需要使用，可以通过以下命令取消代理设置：
+
+```bash
+$ git config --global --unset http.proxy
+$ git config --global --unset https.proxy
+```
+
+#### 使用SSH代替HTTPS
+
+如果更改代理设置没用，可以考虑使用SSH。
+
+HTTPS 和 SSH 是两种不同的协议，常用于访问 Git 仓库。HTTPS使用用户名和密码进行认证，或者使用个人访问令牌（Personal Access Tokens, PATs）来代替密码，每次访问仓库时都需要进行认证，除非使用凭证管理器来缓存认证信息。SSH使用 SSH 密钥对进行认证，用户生成一个密钥对（公钥和私钥），并将公钥添加到 Git 服务（如 GitHub、GitLab 等）的账户中，一旦设置好 SSH 密钥，后续访问无需再输入用户名和密码。
+
+在 Windows 上生成和配置 SSH 密钥的详细步骤：
+
+**安装 OpenSSH 客户端**
+
+在 Windows 10 及更新版本中，OpenSSH 客户端已经包含在系统中，但默认可能没有启用。你可以按照以下步骤启用它：
+
+1. 启用 OpenSSH 客户端：
+
+   - 打开 **设置** -> 进入 **系统** -> 点击 **可选功能** -> 点击 **添加功能** -> 找到并安装 **OpenSSH 客户端**。
+
+2. 验证安装： 打开命令提示符输入以下命令来验证是否安装成功：
+
+   ```bash
+   $ ssh
+   ```
+
+   如果显示 SSH 的帮助信息，则说明安装成功。
+
+**生成 SSH 密钥**
+
+1. 打开命令提示符，运行以下命令生成 SSH 密钥：
+
+   ```bash
+   $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
+
+   按照提示操作，通常可以按 Enter 使用默认路径（例如 `C:\Users\YourUsername\.ssh\id_rsa`）。
+
+   *Remark：这里的电子邮件地址是用于给生成的 SSH 密钥添加一个标签（comment）的参数，用于标识这个密钥。这在您管理多个 SSH 密钥时特别有用，因为可以通过这个标签轻松识别每个密钥的用途或所有者。*
+
+2. 查看生成的公钥：
+
+   ```bash
+   $ type C:\Users\YourUsername\.ssh\id_rsa.pub
+   ```
+
+   复制输出的公钥内容。
+
+**添加 SSH 密钥到 GitHub**
+
+登录 GitHub -> 进入 **Settings** -> 点击 **SSH and GPG keys** -> 点击 **New SSH key** -> 将复制的公钥粘贴到键值框中，填写一个标识（例如 “My Laptop”），然后保存。
+
+**测试 SSH 连接**
+
+```bash
+$ ssh -T git@github.com
+```
+
+你应该会看到类似以下的信息：
+
+```bash
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+**更新远程仓库 URL并推送代码**
+
+确保你的 Git 仓库使用的是 SSH URL：
+
+```bash
+$ git remote set-url origin git@github.com:your_username/your_repository.git
+$ git push origin master
+```
+
+即可解决。
+
+
 
 
 
