@@ -101,7 +101,7 @@
     root: '',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -250,7 +250,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/hwyii/images/avatar.gif">
+      <meta itemprop="image" content="/hwyii/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -297,6 +297,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  7
+                </span>
+              
+            </div>
           
 
           
@@ -395,7 +426,8 @@
 
 <h4 id="非首次推送："><a href="#非首次推送：" class="headerlink" title="非首次推送："></a>非首次推送：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Update files&quot;</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 
-<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>以上是关于Hexo的一些最基本的操作，更多指令可以见上文中提到的Hexo官方文档，本文也将持续更新一些细节。</p>
+<p>以上是关于Hexo的一些最基本的操作，更多指令可以见上文中提到的Hexo官方文档，本文也将持续更新一些细节。</p>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><p>以下是一些踩过的坑：</p>
 <h3 id="典型开发流程"><a href="#典型开发流程" class="headerlink" title="典型开发流程"></a>典型开发流程</h3><ol>
 <li><strong>创建和编辑内容</strong>：<ul>
 <li>使用 Hexo 命令创建新文章或页面，并在 <code>source/_posts</code> 或其他目录中编辑 Markdown 文件。</li>
@@ -484,6 +516,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/hwyii/images/avatar.jpg"
+                alt="" />
+            
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -493,7 +529,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/hwyii/archives/%7C%7C%20archive">
+                <a href="/hwyii/archives/">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
@@ -519,7 +555,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="hwyii0126@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:hwyii0126@gmail.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -558,6 +594,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">He, Weiyi</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">2k</span>
   
 </div>
 
