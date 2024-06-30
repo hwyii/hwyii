@@ -2,6 +2,7 @@
 title: 基于Github和Hexo搭建个人博客
 date: 2024-06-28 20:02:50
 tags: 
+
 ---
 
 本文参考了[Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )和[dongself](https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。
@@ -316,6 +317,42 @@ search:
 2. 字数和时长统计
 
 在theme下的`_config.yml`启用对应功能，即将`post_wordcount`下的值设为`true`.
+
+3. 浏览量统计
+
+在`theme`下的`_config.yml`进行如下设置
+
+```yaml
+busuanzi_count:
+  # Enable busuanzi counter only if other configurations are false
+  enable: true
+  # Custom unique visitor span for the whole site
+  site_uv: true
+  site_uv_header: Visitors
+  site_uv_footer: people
+  # Custom page view span for the whole site
+  site_pv: true
+  site_pv_header: Total Views
+  site_pv_footer: times
+  # Custom page view span for one page only
+  page_pv: true
+  page_pv_header: Reads
+  page_pv_footer:
+```
+
+此外，由于不蒜子的域名更改，我们需要更改源码：
+
+进入 hexo 博客项目的 `themes` 目录下，在 next 主题目录中的 `layout/_third-party/analytics/` 下找到 `busuanzi-counter.swig` 文件，将
+
+```html
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+```
+
+更改为
+
+```html
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+```
 
 
 
