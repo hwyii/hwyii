@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -79,20 +79,17 @@
 
 
 
-<meta name="description" content="本文参考了Byron4j和dongself的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。 基本工具介绍GithubGitHub 是一个基于 Web 的平台，主要用于版本控制和协作开发。它利用了 Git 版本控制系统，提供了一个直观的界面，使开发者能够更方便地管理和共享代码项目。再直观点来说，GitHub就是一个线上的平台，用户可以建立自己的仓库，每个仓">
+<meta name="description" content="本文参考了Byron4j和dongself的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。 基本工具介绍GithubGitHub 是一个基于 Web">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Github和Hexo搭建个人博客">
 <meta property="og:url" content="https://hwyii.github.io/hwyii/2024/06/28/%E5%9F%BA%E4%BA%8EGithub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hawaii&#39;s Blog">
-<meta property="og:description" content="本文参考了Byron4j和dongself的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。 基本工具介绍GithubGitHub 是一个基于 Web 的平台，主要用于版本控制和协作开发。它利用了 Git 版本控制系统，提供了一个直观的界面，使开发者能够更方便地管理和共享代码项目。再直观点来说，GitHub就是一个线上的平台，用户可以建立自己的仓库，每个仓">
+<meta property="og:description" content="本文参考了Byron4j和dongself的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。 基本工具介绍GithubGitHub 是一个基于 Web">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-06-28T12:02:50.000Z">
-<meta property="article:modified_time" content="2024-06-30T09:51:16.818Z">
+<meta property="article:modified_time" content="2024-06-30T12:34:54.732Z">
 <meta property="article:author" content="He, Weiyi">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content="tech">
-<meta property="article:tag" content="life">
-<meta property="article:tag" content="study">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
 
@@ -200,6 +197,26 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/hwyii/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/hwyii/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
           </a>
         </li>
       
@@ -320,6 +337,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/hwyii/categories/Front-end/" itemprop="url" rel="index">
+                    <span itemprop="name">Front end</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -346,7 +385,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  3.5k
+                  3.6k
                 </span>
               
 
@@ -362,7 +401,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  13
+                  14
                 </span>
               
             </div>
@@ -383,7 +422,7 @@
       
 
       
-        <p>本文参考了<a target="_blank" rel="noopener" href="https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md">Byron4j</a>和<a target="_blank" rel="noopener" href="https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">dongself</a>的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。</p>
+        <p>本文参考了<a target="_blank" rel="noopener" href="https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md">Byron4j</a>和<a target="_blank" rel="noopener" href="https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">dongself</a>的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。</p>
 <h2 id="基本工具介绍"><a href="#基本工具介绍" class="headerlink" title="基本工具介绍"></a>基本工具介绍</h2><h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><p><a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 是一个基于 Web 的平台，主要用于版本控制和协作开发。它利用了 Git 版本控制系统，提供了一个直观的界面，使开发者能够更方便地管理和共享代码项目。再直观点来说，GitHub就是一个线上的平台，用户可以建立自己的仓库，每个仓库可以视为不同的项目，储存有各种代码等资料信息。在搭建博客的过程中，建立一个GitHub仓库目的在于提供一个博客站点，如<a href="https://hwyii.github.io/hwyii/">Hawaii’s Blog</a>，让我们的Blog可以被大家看到。</p>
 <h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a> 是一个免费的开源分布式版本控制系统，最初由 Linus Torvalds 于 2005 年开发，旨在更好地管理 Linux 内核开发。Git 的主要功能是跟踪和记录文件的更改历史，使得多个开发者可以协同工作，并在需要时回溯到以前的版本。</p>
 <h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>Node.js 是一个开源的、跨平台的 JavaScript 运行时环境，允许开发者在服务器端运行 JavaScript 代码，它非常适合构建高性能、可扩展的 Web 服务器。Node.js 附带了 npm（Node Package Manager），这是世界上最大的开源库和软件包注册中心。</p>
@@ -624,11 +663,33 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/hwyii/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/hwyii/2024/06/30/Transformer/" rel="prev" title="Transformer">
+                Transformer <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -706,14 +767,32 @@
               
                 <a href="/hwyii/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/hwyii/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/hwyii/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -793,7 +872,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.5k</span>
+    <span title="Site words total count">3.6k</span>
   
 </div>
 
