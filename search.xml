@@ -36,7 +36,6 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
 
 <p>在浏览器中访问<a href="http://localhost:4000/">http://localhost:4000/</a>即可看到博客</p>
-<p><img src="/hwyii/.io//Study\Blog\source_posts\2024\06\基于Github和Hexo搭建个人博客\example.png"></p>
 <p>需要注意的是，此时浏览的博客是本地的。这是因为hexo server启动了一个本地开发服务器（通常在 <code>localhost:4000</code>），用于在你的计算机上预览博客。这个服务器仅在你的计算机上运行，不对外公开。本地服务器使你能够快速查看更改后的效果，而不需要每次修改后都将网站部署到远程服务器。</p>
 <h3 id="使用Hexo写文章"><a href="#使用Hexo写文章" class="headerlink" title="使用Hexo写文章"></a>使用Hexo写文章</h3><p>在项目目录下使用命令</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
