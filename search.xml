@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Transformer</title>
+    <url>/hwyii/2024/06/30/Transformer/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>Transformer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Github和Hexo搭建个人博客</title>
     <url>/hwyii/2024/06/28/%E5%9F%BA%E4%BA%8EGithub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>本文参考了<a href="https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md">Byron4j</a>和<a href="https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">dongself</a>的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。</p>
@@ -208,7 +219,7 @@
 
 <p><strong>更新远程仓库 URL并推送代码</strong></p>
 <p>确保你的 Git 仓库使用的是 SSH URL：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote set-url origin git@github.com:your_username/your_repository.git</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote set-url origin git@github.com:hwyii/hwyii.git</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
 
 <p>即可解决。</p>
 <h3 id="典型开发流程"><a href="#典型开发流程" class="headerlink" title="典型开发流程"></a>典型开发流程</h3><ol>
@@ -235,17 +246,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Transformer</title>
-    <url>/hwyii/2024/06/30/Transformer/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>AI</category>
-      </categories>
-      <tags>
-        <tag>Transformer</tag>
       </tags>
   </entry>
 </search>
