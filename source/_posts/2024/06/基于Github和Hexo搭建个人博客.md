@@ -2,10 +2,12 @@
 title: 基于Github和Hexo搭建个人博客
 date: 2024-06-28 20:02:50
 tags: 
-
+  - Hexo
+categories:
+  - Front end
 ---
 
-本文参考了[Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )和[dongself](https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。
+本文参考了[Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )和[dongself](https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。
 
 ## 基本工具介绍
 
@@ -442,7 +444,7 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 确保你的 Git 仓库使用的是 SSH URL：
 
 ```bash
-$ git remote set-url origin git@github.com:your_username/your_repository.git
+$ git remote set-url origin git@github.com:hwyii/hwyii.git
 $ git push origin master
 ```
 

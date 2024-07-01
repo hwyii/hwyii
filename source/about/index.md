@@ -1,6 +1,7 @@
 ---
 title: 
 date: 2024-06-29 11:31:38
+type: "about"
 ---
 
 Welcome to my blog!
