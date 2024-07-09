@@ -7,7 +7,7 @@ categories:
   - Front end
 ---
 
-本文参考了[Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )和[dongself](https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)的部分工作，希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。
+本文希望给新手一个足够详细的路径搭建自己的个人博客，并在过程中介绍所用到的各种工具。主要内容包括工具介绍、环境准备、使用Hexo搭建博客、主题美化和常见问题解答几部分。此外，本文对开发过程中可能会遇到的bug进行了详尽的讨论，并提出了网上能搜索到的所有解决措施的集合，希望能对读者有所帮助。
 
 ## 基本工具介绍
 
@@ -145,10 +145,10 @@ INFO  Created: D:\Study\Blog\source\_posts\基于Github和Hexo搭建个人博客
 
 #### 修改url
 
-将url设置为`https://username.github.io/project`，`username`是 GitHub 用户名，是您的 GitHub 账号的唯一标识符。project是 GitHub 仓库（repository）的名称，是你在 GitHub 上创建的一个项目或仓库的名称。每个仓库都有一个唯一的名称，用于区分不同的项目。下面是我们的例子：
+将url设置为`https://username.github.io`，这是一种特定的 GitHub Pages 功能，这种仓库称为“用户或组织站点”，`username.github.io`是仓库名，下面是我们的例子：
 
 ```yaml
-url: https://hwyii.github.io/hwyii
+url: https://hwyii.github.io
 ```
 
 #### 修改deploy
@@ -156,18 +156,14 @@ url: https://hwyii.github.io/hwyii
 ```yaml
 deploy:
   type: git
-  repo: https://github.com/hwyii/hwyii.git
+  repo: repo: https://github.com/hwyii/hwyii.github.io.git
   branch: gh-pages
 ```
 
-这段配置表明您希望使用 Git 将生成的静态网页部署到 GitHub Pages 上，使其可以通过 `https://username.github.io/project` 这样的 URL 访问到。
+这段配置表明您希望使用 Git 将生成的静态网页部署到 GitHub Pages 上，使其可以通过 `https://username.github.io` 这样的 URL 访问到。
 
 - `type: git`：指定部署类型为 Git，这表明 Hexo 会使用 Git 来管理和发布静态网站文件。
-- `repo: https://github.com/hwyii/hwyii.git`：这是您的 GitHub 仓库地址。具体来说，
-  - `https://github.com` 是 GitHub 的域名。
-  - `hwyii` 是您的 GitHub 用户名或组织名。
-  - `hwyii.git` 是您的仓库名称，`.git` 后缀表明这是一个 Git 仓库地址。
-  - 这个地址指向您的 GitHub 仓库，Hexo 将会把生成的静态网站文件推送到这个仓库中。
+- `repo: https://github.com/hwyii/hwyii.github.io`：这是您的 GitHub 仓库地址，这个地址指向您的 GitHub 仓库，Hexo 将会把生成的静态网站文件推送到这个仓库中。
 - `branch: gh-pages`：这指定了部署到 GitHub Pages 的分支。在大多数情况下，GitHub Pages 使用 `gh-pages` 分支来托管静态网页内容。
 
 
@@ -196,7 +192,7 @@ $ hexo deploy
 
 ```bash
 $ git init
-$ git remote add origin https://github.com/hwyii/hwyii.git
+$ git remote add origin https://github.com/hwyii/hwyii.github.io.git
 $ git add .
 $ git commit -m "Initial commit"
 $ git push -u origin master
@@ -365,7 +361,7 @@ busuanzi_count:
 因为种种原因（比如科学上网）出现报错
 
 ```bash
-fatal: unable to access 'https://github.com/hwyii/hwyii.git/': Could not resolve proxy: 127.0.0.1.7890 FATAL Something's wrong.
+fatal: unable to access 'https://github.com/hwyii/hwyii.github.io.git': Could not resolve proxy: 127.0.0.1.7890 FATAL Something's wrong.
 ```
 
 主要进行了如下尝试，有关系统的部分以Win10为例。
@@ -444,7 +440,7 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 确保你的 Git 仓库使用的是 SSH URL：
 
 ```bash
-$ git remote set-url origin git@github.com:hwyii/hwyii.git
+$ git remote set-url origin git@github.com:hwyii/hwyii.github.io.git
 $ git push origin master
 ```
 
@@ -464,3 +460,10 @@ $ git push origin master
    - 在浏览器中查看博客效果，根据需要进行调整和修改。每次保存修改后，Hexo 会自动重新生成静态文件并刷新浏览器页面。
 4. **部署到远程服务器**：
    - 当你对本地预览效果满意后，可以使用 `hexo deploy` 命令将博客部署到远程服务器（例如 GitHub Pages、Netlify 等），使其对外公开访问。
+
+
+
+## 参考资料
+
+1. [Byron4j](https://github.com/Byron4j/CookBook/blob/master/Git/1-Github_Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.md )
+2. [dongself](https://doingself.github.io/2017/06/16/2017-06-16-Hexo%E4%B8%BB%E9%A2%98-NexT-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)
