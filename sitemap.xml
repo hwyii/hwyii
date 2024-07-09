@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hwyii.github.io/hwyii/2024/06/28/%E5%9F%BA%E4%BA%8EGithub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://hwyii.github.io/2024/06/28/%E5%9F%BA%E4%BA%8EGithub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2024-07-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hwyii.github.io/categories/index.html</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://hwyii.github.io/hwyii/2024/06/30/Transformer/</loc>
+    <loc>https://hwyii.github.io/tags/index.html</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://hwyii.github.io/hwyii/categories/index.html</loc>
+    <loc>https://hwyii.github.io/about/index.html</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -29,25 +38,7 @@
   </url>
   
   <url>
-    <loc>https://hwyii.github.io/hwyii/tags/index.html</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hwyii.github.io/hwyii/about/index.html</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hwyii.github.io/hwyii/archives/index.html</loc>
+    <loc>https://hwyii.github.io/archives/index.html</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -57,23 +48,16 @@
   
 
   <url>
-    <loc>https://hwyii.github.io/hwyii</loc>
-    <lastmod>2024-07-01</lastmod>
+    <loc>https://hwyii.github.io/</loc>
+    <lastmod>2024-07-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://hwyii.github.io/hwyii/tags/Transformer/</loc>
-    <lastmod>2024-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hwyii.github.io/hwyii/tags/Hexo/</loc>
-    <lastmod>2024-07-01</lastmod>
+    <loc>https://hwyii.github.io/tags/Hexo/</loc>
+    <lastmod>2024-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -81,15 +65,8 @@
 
   
   <url>
-    <loc>https://hwyii.github.io/hwyii/categories/AI/</loc>
-    <lastmod>2024-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hwyii.github.io/hwyii/categories/Front-end/</loc>
-    <lastmod>2024-07-01</lastmod>
+    <loc>https://hwyii.github.io/categories/Front-end/</loc>
+    <lastmod>2024-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
